@@ -1,6 +1,14 @@
 # GitHub Star Graph
 
-Este projeto oferece um roteiro completo para transformar a lista de repositórios que você marcou com estrela em **visualizações interativas** e **insights acionáveis**. A proposta é começar pequeno—extraindo e classificando seus repositórios favoritos—e evoluir gradualmente para uma solução avançada que inclua enriquecimento com IA, grafos de similaridade, integração com repositórios em alta e atualizações automatizadas. Tudo é documentado para que você acompanhe o raciocínio, as escolhas e os resultados ao longo do caminho.
+<!-- Hero image illustrating the concept of a connected star network -->
+![Network Graph](images/network_graph.png)
+
+> **Note for collaborators:** This repository is designed not only for my personal exploration but also as a reusable toolkit for anyone who wants to analyse and visualise their own starred repositories.  Instructions are written so other developers can follow along, adapt the scripts and contribute improvements.
+
+Este projeto oferece um roteiro completo para transformar a lista de repositórios que você marcou com estrela em **visualizações interativas** e **insights acionáveis**. A proposta é começar pequeno—extraindo e classificando seus repositórios favoritos—e evoluir gradualmente para uma solução avançada que inclua enriquecimento com IA, grafos de similaridade, integração com repositórios em alta e atualizações automatizadas. Tudo é documentado para que você (ou qualquer outra pessoa) acompanhe o raciocínio, as escolhas e os resultados ao longo do caminho.
+
+*For an English version of this document, see [`README_en.md`](README_en.md).*  
+*Para uma versão em inglês deste documento, consulte [`README_en.md`](README_en.md).*  
 
 ## Objetivos
 
@@ -51,6 +59,12 @@ Os scripts principais são:
 
    ```bash
    python scripts/classify_repos.py starred_repos.json starred_repos_refined.csv
+   ```
+
+6. **Gere gráficos resumo** opcionalmente, utilizando o script `generate_charts.py` para visualizar a distribuição de domínios, tipos e linguagens.  Isto cria arquivos PNG numa pasta especificada:
+
+   ```bash
+   python scripts/generate_charts.py starred_repos_refined.csv charts_output
    ```
 
 6. **Analise os resultados**: abra o CSV gerado em uma planilha (Excel, LibreOffice ou Google Sheets) e explore as colunas `Área de Domínio`, `Tipo de Projeto`, `Subdomínio`, `Linguagem`, etc.

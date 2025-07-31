@@ -1,6 +1,6 @@
 # GitHub Star Graph
 
-This project provides a complete guide to transform your list of starred repositories into **interactive visualizations** and **actionable insights**.  The idea is to start small—by extracting and classifying your favourite repositories—and gradually evolve towards a sophisticated solution that includes AI enrichment, similarity graphs, integration with trending repositories and automated updates.  Everything is documented so you can follow the reasoning, choices and results along the way.
+This project provides a complete guide to transform your list of starred repositories into **interactive visualizations** and **actionable insights**.  The idea is to start small—by extracting and classifying your favourite repositories—and gradually evolve towards a sophisticated solution that includes intelligent enrichment, similarity graphs, integration with trending repositories and automated updates.  Everything is documented so you can follow the reasoning, choices and results along the way.
 
 ## Goals
 
